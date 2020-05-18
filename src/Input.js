@@ -28,7 +28,6 @@ export class Input extends React.Component {
     const InputHeight = Input.offsetHeight;
     const InputWidth = Input.offsetWidth;
     const InputOffsetLeft = Input.offsetLeft;
-    console.log(InputOffsetLeft);
 
     if (InputOffsetTop < 350) {
       this.setState({

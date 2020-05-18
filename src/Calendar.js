@@ -37,7 +37,6 @@ export default class Calendar extends React.Component {
     await fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         this.setState({
           year: year,
           month: month,
@@ -98,7 +97,6 @@ export default class Calendar extends React.Component {
   }
 
   render() {
-    console.log(this.props.offsetTop);
     const style = {
       top: this.props.offsetTop,
       left: this.props.offsetLeft,

@@ -13,9 +13,16 @@ export class Day extends React.Component {
   }
 
   render() {
+    let style = {};
+    if (this.props.day["röd dag"] === "Ja") {
+      style = {
+        color: "red",
+      };
+    }
+
     return (
       <div className="day">
-        <li onClick={this.test}>
+        <li style={style} onClick={this.test}>
           {this.props.day.datum[8] === "0"
             ? this.props.day.datum[9].toString()
             : this.props.day.datum[8].toString() +
