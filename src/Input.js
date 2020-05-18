@@ -29,18 +29,12 @@ export class Input extends React.Component {
     const InputWidth = Input.offsetWidth;
     const InputOffsetLeft = Input.offsetLeft;
 
-    if (InputOffsetTop < 350) {
-      this.setState({
-        calendarVisible: true,
-        offsetTop: InputOffsetTop + InputHeight + 5,
-        offsetLeft: InputOffsetLeft,
-        calendarWidth: InputWidth,
-      });
-    } else {
-      this.setState({
-        calendarVisible: true,
-      });
-    }
+    this.setState({
+      calendarVisible: true,
+      offsetTop: InputOffsetTop + InputHeight + 5,
+      offsetLeft: InputOffsetLeft,
+      calendarWidth: InputWidth,
+    });
   }
 
   setInputValue(value) {
