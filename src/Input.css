@@ -1,0 +1,10 @@
+.Calendar-Input-Wrapper {
+}
+
+.Calendar-Input {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: aliceblue;
+}
